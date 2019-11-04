@@ -24,9 +24,11 @@ int main(){
         ocorrencias["Local"].push_back(local);
         ocorrencias["Prioridade"].push_back(prioridade);
         ocorrencias["Responsável"].push_back(responsavel);
-
         contador++;
-    }while(true);
+        
+        cout << "Adicionar outra ocorrência? (sim ou não)";
+        cin >> op;
+    }while(op != "não");
     
 
     cout << endl;
@@ -35,7 +37,6 @@ int main(){
     }
 
     cout << endl << endl;
-
     
     for(int i = 0; i < contador; i++){
         for(auto elemento : ocorrencias){
