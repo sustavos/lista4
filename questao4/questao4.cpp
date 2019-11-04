@@ -1,6 +1,7 @@
 #include <iostream>
 #include <map>
 #include <iomanip>
+#include <vector>
 
 using namespace std;
 
@@ -21,13 +22,13 @@ int main(){
 
     cout << endl;
     for(auto elemento : ocorrencias){
-        cout << elemento.first << "\t";
+        cout << setw(15) << left << elemento.first;
     }
 
     cout << endl << endl;
 
     for(auto elemento : ocorrencias){
-        cout << elemento.second << setw(15);
+        cout << setw(15) << left << elemento.second;
     }
 
     cout << endl << endl;
